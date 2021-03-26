@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size:  62.5%;
+}
+body{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+main{
+    width: 70vw;
+    min-width: 360px;
+    max-width: 757px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: rgb(216, 144, 252);
+    padding: 15px;
+}
+main .borde{
+    width: 100vw;
+    min-width: 315px;
+    max-width: 757px;
+    background-color: rgb(216, 144, 252);
+    padding: 4rem;
+    border: 15px solid rgb(179, 74, 231);
+    border-radius: 30px;
+    display: flex;
+    flex-flow: column wrap;
+}
+.cabecera{
+    border: 5px solid rgb(179, 74, 231);
+    border-radius: 10px;
+    margin-bottom: 15px;;
+}
+.cabecera p{
+    font-size: 4rem;
+    color:white;
+    text-align: center;
+}
+.boletas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.boletas .candidato{
+    width: 28rem;
+    min-width: 30px;
+    max-width: 250px;
+    height: 10rem;
+    border: 5px solid rgb(179, 74, 231);
+    border-radius: 10px;
+    align-self: flex-start;
+    flex: 1 1 auto;
+    margin: 5px 0;
+
+}
+.borde .sugerencia{
+    border: 5px solid rgb(179, 74, 231);
+    border-radius: 10px;
+    margin-top: 15px;
+    position: relative;
+    padding: 8px;
+}
+.borde .sugerencia p{
+    font-size: 2rem;
+    text-align: justify;
+    color: white;
+}
