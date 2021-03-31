@@ -9,10 +9,44 @@
 </head>
 <body>
     <main>
+        <div class="cabecera">
+            <p>Proceso Electoral Federal 2020-2021
+                <br>
+                <span>Diputaciones Federales</span>  
+        </p>
+        </div>
         <div class="borde">
-            <div class="cabecera">
-                <p>Elección 2021.    Boleta Ayuntamiento</p>
-            </div>
+            <form action=" ">
+                <label for="EF">
+                    <span>ENTIDAD FEDERATIVA</span>
+                    <input list="Estado" id="entidad-federativa" class="entidadFederativa" placeholder="Estado">
+                    <datalist id="Estado">
+                        <option value="Aguascaliente"></option>
+                        <option value="Chiapas"></option>
+                        <option value="Campeche"></option>
+                    </datalist>
+                </input>
+                </label>
+                <label for="CP">
+                    <span>CIRCUNSCRIPCION PLURINOMINAL</span>
+                    <input type="number" id="circunscripcion-plurinominal" class="circunscripcion"></input>
+                </label>
+                <label for="DE">
+                    <span>DISTRITO ELECTORAL</span>
+                    <input type="number" id="distrito-electoral" class="distrito"></input>
+                </label>
+                <label for="MA">
+                    <span>MUNICIPIO O ALCALDIA</span>
+                    <input list="Municipio" id="circunscripcion-plurinominal" placeholder="Municipio o alcaldía">
+                    <datalist id="Municipio">
+                        <option value="Tuxtla"></option>
+                        <option value="Tonalá"></option>
+                        <option value="Tapachula"></option>
+                    </datalist>
+                </input>
+                </label>
+            </form>
+            <p class="indicaciones">Marque el recuadro de su preferencia</p>
             <section class="boletas">
                 <article class="candidato">
                     <figure>
@@ -56,17 +90,11 @@
                         <img src="#" alt="">
                     </figure>
                 </article>
-                <article class="candidato">
-                    <figure>
-                        
-                        <img src="#" alt="">
-                    </figure>
+                <article class="candidato candidaturaNoRegistrada">
+                    <p>SI DESEA VOTAR POR UN CANDIDATO/A NO REGISTRADO/A, 
+                        ESCRIBA EN ESTE RECUADRO E NOMBRE COMPLETO</p>
                 </article>
             </section>
-            <div class="sugerencia">
-                <p>Marca con una X el candidato que desees. Evita 
-                marcar diferentes candidatos si no quieres anular tu voto</p>
-            </div>
         </div>
     </main>
 </body>
